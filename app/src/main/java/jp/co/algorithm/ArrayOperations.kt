@@ -11,6 +11,7 @@ class ArrayOperations() {
          //   2Dimension LeetCode_118_Pascal_Triangle
          //   2Dimension LeetCode_566_Reshape_the_Matrix
          //   2Dimension LeetCode_74_Search_2D_Matrix
+            //HashSe use in LeetCode_36_Valid_Sudoku
         }
 
         fun matrixReshape(mat: Array<IntArray>, r: Int, c: Int): Array<IntArray> {
