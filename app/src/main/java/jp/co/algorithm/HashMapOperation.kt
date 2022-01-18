@@ -1,7 +1,7 @@
 package jp.co.algorithm
 
 class HashMapOperation {
-
+//LeetCode_387_First_Unique_Character_in_String
 
     fun twoSum(nums: IntArray, target: Int): IntArray {
         var savedMap: HashMap<Int, Int> = HashMap<Int, Int>()
@@ -17,6 +17,12 @@ class HashMapOperation {
             savedMap.put(nums[i],i)
         }
         return intArrayOf(0,0)
+
+    }
+    fun canConstruct(ransomNote: String, magazine: String): Boolean {
+        if(ransomNote.contains(magazine))
+            return true
+        else return false
 
     }
 }

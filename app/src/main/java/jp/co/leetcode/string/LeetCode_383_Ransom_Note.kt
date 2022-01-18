@@ -6,7 +6,7 @@ import android.R.string
 import java.lang.StringBuilder
 
 
-class LeetCode_387_First_Unique_Character_in_String {
+class LeetCode_383_Ransom_Note {
     companion object
     {
         @JvmStatic
@@ -40,38 +40,6 @@ for(item in 0..ransomNote.length-1)
 
 
         }
-        fun firstUniqChar(s: String): Int {
 
-            var indexMap: HashMap<Char, Int> = HashMap<Char, Int>()
-            var occurs: HashMap<Char, Int> = HashMap<Char, Int>()
-            val list = mutableListOf<Char>()
-
-            for(i in 0..s.length-1)
-            {
-                if(indexMap.containsKey(s[i]))
-                {
-                    occurs.put(s[i],0)
-                }else
-                {
-                    indexMap.put(s[i],(i))
-                    occurs.put(s[i],1)
-                    list.add(s[i])
-                }
-
-            }
-            for(i in 0..list.size-1)
-            {
-                if(occurs.get(list.get(i))==1)
-                {
-                 return indexMap.get(list.get(i))!!
-                }
-
-            }
-
-
-      return -1
-
-
-        }
     }
 }
