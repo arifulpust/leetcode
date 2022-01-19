@@ -1,4 +1,4 @@
-package jp.co.algorithm
+package jp.co.datastructure
 
 import jp.co.leetcode.array.LeetCode_53_Maximum_Subarray
 
