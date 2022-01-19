@@ -1,4 +1,4 @@
-package jp.co.algorithm
+package jp.co.datastructure
 
 class HashMapOperation {
 //LeetCode_387_First_Unique_Character_in_String

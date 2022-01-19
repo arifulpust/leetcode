@@ -1,4 +1,4 @@
-package jp.co.algorithm
+package jp.co.datastructure
 
 import java.util.*
 

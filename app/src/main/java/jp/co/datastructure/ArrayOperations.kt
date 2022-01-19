@@ -1,6 +1,4 @@
-package jp.co.algorithm
-
-import jp.co.leetcode.array.LeetCode_566_Reshape_the_Matrix
+package jp.co.datastructure
 
 class ArrayOperations() {
     companion object {
