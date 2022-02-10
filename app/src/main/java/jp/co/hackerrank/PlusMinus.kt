@@ -1,7 +1,9 @@
 package jp.co.hackerrank
 
 class PlusMinus {
+
     companion object{
+        
         @JvmStatic
         fun main(args :Array<String>)
         {
@@ -11,18 +13,9 @@ class PlusMinus {
 
            // plusMinus(arr)
 
-
-//            val cinema = arrayOf(
-//                arrayOf(11, 2, 4),
-//                arrayOf(4, 5, 6),
-//                arrayOf(10, 8, -12)
-//
-//
-//            )
-//          print(  diagonalDifference( cinema
-//            )
-           // )
-           // staircase(100)
+            var div = 10 / 2
+            div = div * 2
+            println(div)
         }
         fun staircase(n: Int): Unit {
             // Write your code here

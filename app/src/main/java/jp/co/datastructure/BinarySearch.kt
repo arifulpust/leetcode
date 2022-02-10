@@ -3,18 +3,31 @@ package jp.co.datastructure
 class BinarySearch {
 
     companion object {
+
+        fun calculate(x: Int, y: Int, operation: (Int, Int) -> Int): Int {  // 1
+            return operation(x, y)                                          // 2
+        }
+
+        fun sum(x: Int, y: Int) = x + y                                     // 3
+
         @JvmStatic
         fun main(args: Array<String>) {
-
-            val input = readLine()!!.trim().split(" ").map { it -> it.toInt() }.toIntArray() // to read an array (from user input)
-            val eleToSearch = readLine()!!.trim().toInt() // to read the element to be searched (from user input)
-            val pos = binarySearchIterative(input, eleToSearch)
-            if (pos >= 0) {
-                println(pos) // to print position at last
-            } else {
-                println("Position not found")
-            }
+            val sumResult = calculate(4, 5, ::sum)                          // 4
+            val mulResult = calculate(20, 5) { a, b -> a / b }               // 5
+            println("sumResult $sumResult, mulResult $mulResult")
         }
+//        @JvmStatic
+//        fun main(args: Array<String>) {
+//
+//            val input = readLine()!!.trim().split(" ").map { it -> it.toInt() }.toIntArray() // to read an array (from user input)
+//            val eleToSearch = readLine()!!.trim().toInt() // to read the element to be searched (from user input)
+//            val pos = binarySearchIterative(input, eleToSearch)
+//            if (pos >= 0) {
+//                println(pos) // to print position at last
+//            } else {
+//                println("Position not found")
+//            }
+//        }
 
         fun binarySearchIterative(input: IntArray, eleToSearch: Int): Int {
             var beg = 0
